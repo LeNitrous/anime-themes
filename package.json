@@ -1,5 +1,5 @@
 {
-  "name": "themes-moe",
+  "name": "anime-themes",
   "version": "1.0.0",
   "description": "A wrapper for interacting around https://themes.moe",
   "main": "dist/index.js",
