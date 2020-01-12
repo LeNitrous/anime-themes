@@ -1,15 +1,19 @@
 # anime-themes
+![GitHub](https://img.shields.io/github/license/lenitrous/anime-themes?color=blue&style=flat-square) ![npm](https://img.shields.io/npm/v/anime-themes?style=flat-square) 
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W71CF9V)
+
 A library used for interacting around [Themes.moe](https://themes.moe). This is an unofficial wrapper library and is not affiliated with the said website.
 
 This uses [node-fetch](https://github.com/node-fetch/node-fetch#) for making requests.
 
-* Installation
-* Contributing
-* Documentation
-    * Basic Usage
-        * Requiring
-        * Getting an anime by title
-        * Getting an anime by MyAnimeList ID
+* [Installation](#Installation)
+* [Contributing](#Contributing)
+* [Documentation](#Documentation)
+    * [Basic Usage](#Basic-Usage)
+        * [Requiring](#Requiring)
+        * [Getting an anime by title](Getting-an-anime-by-title)
+        * [Getting an anime by MyAnimeList ID](Getting-an-anime-by-MyAnimeList-ID)
 
 ## Installation
 `> npm install anime-themes`
