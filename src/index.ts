@@ -4,9 +4,19 @@ import fetch, { RequestInit } from "node-fetch";
 
 export default class AnimeThemes {
     public readonly host: string;
+    private readonly options: RequestInit;
 
     constructor(options: IAnimeThemesOptions = { host: "https://themes.moe/api" }) {
         this.host = options.host;
+        this.options = {
+            headers: {
+                "Accept": "application/json, text/plain, */*",
+                "Accept-Encoding": "gzip,deflate,br",
+                "Content-Type": "application/json",
+                "Transfer-Encoding": "chunked",
+                "User-Agent":  options.userAgent || `anime-themes/${require("../package.json").version} (+https://github.com/LeNitrous/anime-themes)`,
+            },
+        };
     }
 
     public async search(title: string): Promise<Anime[]> {
@@ -22,10 +32,11 @@ export default class AnimeThemes {
     }
 
     public async query(path: string, options?: RequestInit) {
-        return await (await fetch(this.host + path, options)).json();
+        return await (await fetch(this.host + path, { ...this.options, ...options })).json();
     }
 }
 
 export interface IAnimeThemesOptions {
     host: string;
+    userAgent?: string;
 }
