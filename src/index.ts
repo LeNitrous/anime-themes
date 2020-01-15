@@ -1,8 +1,11 @@
 import Anime from "./anime";
-import IAnimeResponse from "./response/anime-response";
+import Theme from "./theme";
 import fetch, { RequestInit } from "node-fetch";
+import { IAnimeResponse, IAnimeThemeResponse } from "./responses";
 
-export default class AnimeThemes {
+class AnimeThemes {
+    public static Anime: AnimeConstructor;
+    public static Theme: ThemeConstructor;
     public readonly host: string;
     private readonly options: RequestInit;
 
@@ -37,7 +40,15 @@ export default class AnimeThemes {
     }
 }
 
-export interface IAnimeThemesOptions {
+type AnimeConstructor = new (data: IAnimeResponse, api: AnimeThemes) => Anime;
+type ThemeConstructor = new (data: IAnimeThemeResponse, anime: Anime) => Theme;
+
+interface IAnimeThemesOptions {
     host: string;
     userAgent?: string;
 }
+
+AnimeThemes.Anime = Anime;
+AnimeThemes.Theme = Theme;
+
+export = AnimeThemes;
