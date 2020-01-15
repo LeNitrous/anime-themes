@@ -1,6 +1,6 @@
 import Anime from "./anime";
 import IThemeResponse, { IThemeMirrorResponse } from "./response/theme-response";
-import ThemesMoe from ".";
+import AnimeThemes from ".";
 
 export default class Theme {
     public readonly title: string;
@@ -9,7 +9,7 @@ export default class Theme {
     public readonly number: number;
     public readonly version: number;
     public readonly anime: Anime;
-    public readonly api: ThemesMoe;
+    public readonly api: AnimeThemes;
 
     constructor(data: IThemeResponse, anime: Anime) {
         this.title = data.themeName;

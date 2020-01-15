@@ -1,14 +1,14 @@
 import Anime from "../src/anime";
 import chai from "chai";
 import chaiArray from "chai-arrays";
-import ThemesMoe from "../src";
+import AnimeThemes from "../src";
 
 chai.use(chaiArray);
 
 const expect = chai.expect;
-const api = new ThemesMoe();
+const api = new AnimeThemes();
 
-describe("ThemesMoeAPIWrapper", () => {
+describe("AnimeThemes", () => {
     it("should get an anime by it's MyAnimeList ID", async () => {
         const response = await api.fetch(36633);
         expect(response).to.be.an.instanceof(Anime);
