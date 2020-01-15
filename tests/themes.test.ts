@@ -9,21 +9,27 @@ const expect = chai.expect;
 const api = new AnimeThemes();
 
 describe("AnimeThemes", () => {
-    it("should get an anime by it's MyAnimeList ID", async () => {
-        const response = await api.fetch(36633);
-        expect(response).to.be.an.instanceof(Anime);
-        expect(response.title).to.equal("Date A Live III");
+    describe("#search", () => {
+        it("should return a list of numeric ids from a term", async () => {
+            const response = await api.search("Azur Lane");
+            expect(response).to.be.array();
+        });
     });
 
-    it("should get a list of anime from a term", async () => {
-        const response = await api.search("Azur Lane");
-        expect(response).to.be.array();
-        expect(response.length).to.be.greaterThan(0);
+    describe("#getAnime", () => {
+        it("should return a single anime from an id", async () => {
+            const response = await api.getAnime(38328);
+            expect(response).to.be.an.instanceof(Anime);
+        });
     });
 
-    it("should get a theme's mirror URL", async () => {
-        const response = await api.fetch(36633);
-        const mirrors = await response.themes[0].getMirrors();
-        expect(mirrors).to.be.array();
+    describe(".Theme", () => {
+        describe("#getMirrors", () => {
+            it("should return a list of URLs", async () => {
+                const response = await api.getAnime(38328);
+                const mirrors = await response.themes[0].getMirrors();
+                expect(mirrors).to.be.array();
+            });
+        });
     });
 });

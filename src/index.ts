@@ -21,17 +21,18 @@ export default class AnimeThemes {
 
     public async search(title: string): Promise<Anime[]> {
         title = title.replace(/!/g, "%21");
-        const search = await this.query(`/anime/search/${title}`);
-        const response = await this.query("/themes/search", { method: "POST", body: JSON.stringify(search) });
-        return response.map((item: IAnimeResponse) => new Anime(item, this));
+        const search = await this.query<number[]>(`/anime/search/${title}`);
+        const response =
+            await this.query<IAnimeResponse[]>("/themes/search", { method: "POST", body: JSON.stringify(search) });
+        return response.map((item) => new Anime(item, this));
     }
 
-    public async fetch(id: number): Promise<Anime> {
-        const response = await this.query(`/themes/${id}`);
+    public async getAnime(id: number): Promise<Anime> {
+        const response = await this.query<IAnimeResponse>(`/themes/${id}`);
         return new Anime(response[0], this);
     }
 
-    public async query(path: string, options?: RequestInit) {
+    public async query<T>(path: string, options?: RequestInit): Promise<T> {
         return await (await fetch(this.host + path, { ...this.options, ...options })).json();
     }
 }

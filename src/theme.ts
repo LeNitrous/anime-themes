@@ -1,6 +1,6 @@
 import Anime from "./anime";
-import IThemeResponse, { IThemeMirrorResponse } from "./response/theme-response";
 import AnimeThemes from ".";
+import { IAnimeThemeResponse, IThemeResponse } from "./response/theme-response";
 
 export default class Theme {
     public readonly title: string;
@@ -11,7 +11,7 @@ export default class Theme {
     public readonly anime: Anime;
     public readonly api: AnimeThemes;
 
-    constructor(data: IThemeResponse, anime: Anime) {
+    constructor(data: IAnimeThemeResponse, anime: Anime) {
         this.title = data.themeName;
         this.url = data.mirror.mirrorURL;
 
@@ -25,8 +25,8 @@ export default class Theme {
     }
 
     public async getMirrors(): Promise<string[]> {
-        const response = await this.api.query(`/themes/${this.anime.id}/${this.type}/mirrors`);
-        return await response.mirrors.map((mirror: IThemeMirrorResponse) => mirror.mirrorURL);
+        const response = await this.api.query<IThemeResponse>(`/themes/${this.anime.id}/${this.type}/mirrors`);
+        return response.mirrors.map((mirror) => mirror.mirrorURL);
     }
 }
 

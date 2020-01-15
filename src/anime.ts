@@ -1,6 +1,5 @@
-import IAnimeResponse from "./response/anime-response";
-import IThemeResponse from "./response/theme-response";
 import AnimeThemes from ".";
+import IAnimeResponse from "./response/anime-response";
 import Theme from "./theme";
 
 export default class Anime {
@@ -16,7 +15,7 @@ export default class Anime {
         this.year = data.year;
         this.title = data.name;
         this.api = api;
-        this.themes = data.themes.map((t: IThemeResponse) => new Theme(t, this));
+        this.themes = data.themes.map((t) => new Theme(t, this));
     }
 }
 
