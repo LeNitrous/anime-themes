@@ -1,0 +1,16 @@
+{
+    "themeType": "OP",
+    "themeName": "graphite/diamond",
+    "mirrors": [
+        {
+            "mirrorURL": "https://animethemes.moe/video/AzurLane-OP1-NCBD1080.webm",
+            "priority": 0,
+            "notes": "(NC, BD, 1080)"
+        },
+        {
+            "mirrorURL": "https://animethemes.moe/video/AzurLane-OP1.webm",
+            "priority": 0,
+            "notes": ""
+        }
+    ]
+}

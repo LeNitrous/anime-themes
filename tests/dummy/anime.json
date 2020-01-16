@@ -1,0 +1,44 @@
+{
+    "malID": 38328,
+    "name": "Azur Lane",
+    "year": 2019,
+    "season": "fall",
+    "themes": [
+        {
+            "themeType": "OP",
+            "themeName": "graphite/diamond",
+            "mirror": {
+                "mirrorURL": "https://animethemes.moe/video/AzurLane-OP1-NCBD1080.webm",
+                "priority": 7,
+                "notes": ""
+            }
+        },
+        {
+            "themeType": "ED V1",
+            "themeName": "Hikari no Michishirube",
+            "mirror": {
+                "mirrorURL": "https://animethemes.moe/video/AzurLane-ED1-NCBD1080.webm",
+                "priority": 7,
+                "notes": ""
+            }
+        },
+        {
+            "themeType": "ED V2",
+            "themeName": "Hikari no Michishirube",
+            "mirror": {
+                "mirrorURL": "https://animethemes.moe/video/AzurLane-ED1v2.webm",
+                "priority": 0,
+                "notes": ""
+            }
+        },
+        {
+            "themeType": "ED V3",
+            "themeName": "Hikari no Michishirube",
+            "mirror": {
+                "mirrorURL": "https://animethemes.moe/video/AzurLane-ED1v3.webm",
+                "priority": 0,
+                "notes": ""
+            }
+        }
+    ]
+}
