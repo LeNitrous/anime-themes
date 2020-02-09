@@ -1,7 +1,7 @@
 import Anime from "./anime";
 import Theme from "./theme";
-import fetch, { RequestInit } from "node-fetch";
 import { IAnimeResponse, IAnimeThemeResponse } from "./responses";
+import fetch, { RequestInit } from "node-fetch";
 
 class AnimeThemes {
     public static Anime: AnimeConstructor;

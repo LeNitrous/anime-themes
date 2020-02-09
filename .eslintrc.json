@@ -1,0 +1,28 @@
+{
+    "env": {
+        "browser": false,
+        "es6": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "@typescript-eslint/interface-name-prefix": ["warn", { "prefixWithI": "always" }],
+        "indent": ["warn", 4],
+        "sort-imports": ["warn", { "memberSyntaxSortOrder": [ "none", "all", "single", "multiple" ] }]
+    }
+}
