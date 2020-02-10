@@ -1,5 +1,5 @@
-import Anime, { IAnimeResponse } from "./anime";
 import AnimeThemes from ".";
+import Anime, { IAnimeResponse } from "./anime";
 
 export default class Artist {
     public readonly slug: string;
