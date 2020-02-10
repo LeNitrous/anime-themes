@@ -1,0 +1,428 @@
+{
+    "artistID": "mayn",
+    "artistName": "May'n",
+    "themes": [
+        {
+            "malID": 11759,
+            "name": "Accel World",
+            "year": 2012,
+            "season": "spring",
+            "themes": [
+                {
+                    "themeType": "OP1",
+                    "themeName": "Chase the world",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/AccelWorld-OP1.webm",
+                        "priority": 7,
+                        "notes": "NSFW"
+                    }
+                }
+            ]
+        },
+        {
+            "malID": 13939,
+            "name": "Accel World EX",
+            "year": 2012,
+            "season": "summer",
+            "themes": [
+                {
+                    "themeType": "OP1",
+                    "themeName": "Chase the world",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/AccelWorldEX-OP1.webm",
+                        "priority": 7,
+                        "notes": "NSFW"
+                    }
+                }
+            ]
+        },
+        {
+            "malID": 30382,
+            "name": "Aquarion Logos",
+            "year": 2015,
+            "season": "summer",
+            "themes": [
+                {
+                    "themeType": "OP1",
+                    "themeName": "Yamadaire darlin'",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/AquarionLogos-OP1.webm",
+                        "priority": 0,
+                        "notes": ""
+                    }
+                },
+                {
+                    "themeType": "OP2",
+                    "themeName": "Yoake no Logos",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/AquarionLogos-OP2.webm",
+                        "priority": 0,
+                        "notes": ""
+                    }
+                },
+                {
+                    "themeType": "ED2",
+                    "themeName": "Hontou no Koe wo Anata ni Azuketakute",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/AquarionLogos-ED2.webm",
+                        "priority": 0,
+                        "notes": ""
+                    }
+                }
+            ]
+        },
+        {
+            "malID": 38328,
+            "name": "Azur Lane",
+            "year": 2019,
+            "season": "fall",
+            "themes": [
+                {
+                    "themeType": "OP",
+                    "themeName": "graphite/diamond",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/AzurLane-OP1-NCBD1080.webm",
+                        "priority": 7,
+                        "notes": ""
+                    }
+                }
+            ]
+        },
+        {
+            "malID": 11633,
+            "name": "Blood Lad",
+            "year": 2013,
+            "season": "summer",
+            "themes": [
+                {
+                    "themeType": "OP",
+                    "themeName": "ViViD",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/BloodLad-OP1.webm",
+                        "priority": 0,
+                        "notes": ""
+                    }
+                }
+            ]
+        },
+        {
+            "malID": 14345,
+            "name": "Btooom!",
+            "year": 2012,
+            "season": "fall",
+            "themes": [
+                {
+                    "themeType": "ED",
+                    "themeName": "Aozora",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/Btooom-ED1.webm",
+                        "priority": 7,
+                        "notes": ""
+                    }
+                }
+            ]
+        },
+        {
+            "malID": 8630,
+            "name": "Hidan no Aria",
+            "year": 2011,
+            "season": "spring",
+            "themes": [
+                {
+                    "themeType": "OP V1",
+                    "themeName": "Scarlet Ballet",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/HidanNoAria-OP1.webm",
+                        "priority": 7,
+                        "notes": ""
+                    }
+                },
+                {
+                    "themeType": "OP V2",
+                    "themeName": "Scarlet Ballet",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/HidanNoAria-OP1v2.webm",
+                        "priority": 7,
+                        "notes": ""
+                    }
+                },
+                {
+                    "themeType": "OP V3",
+                    "themeName": "Scarlet Ballet",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/HidanNoAria-OP1v3.webm",
+                        "priority": 7,
+                        "notes": ""
+                    }
+                },
+                {
+                    "themeType": "OP V4",
+                    "themeName": "Scarlet Ballet",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/HidanNoAria-OP1v4.webm",
+                        "priority": 7,
+                        "notes": ""
+                    }
+                }
+            ]
+        },
+        {
+            "malID": 20457,
+            "name": "Inari, Konkon, Koi Iroha.",
+            "year": 2014,
+            "season": "winter",
+            "themes": [
+                {
+                    "themeType": "OP",
+                    "themeName": "Kyou ni Koiiro",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/InariKonKon-OP1-NCBD1080.webm",
+                        "priority": 7,
+                        "notes": ""
+                    }
+                }
+            ]
+        },
+        {
+            "malID": 34012,
+            "name": "Isekai Shokudou",
+            "year": 2017,
+            "season": "summer",
+            "themes": [
+                {
+                    "themeType": "OP",
+                    "themeName": "One In A Billion",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/IsekaiShokudou-OP1-NCBD1080.webm",
+                        "priority": 7,
+                        "notes": ""
+                    }
+                }
+            ]
+        },
+        {
+            "malID": 38920,
+            "name": "Kochouki: Wakaki Nobunaga",
+            "year": 2019,
+            "season": "summer",
+            "themes": [
+                {
+                    "themeType": "ED",
+                    "themeName": "Kiba to Tsubasa",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/Kochouki-ED1.webm",
+                        "priority": 0,
+                        "notes": ""
+                    }
+                }
+            ]
+        },
+        {
+            "malID": 37601,
+            "name": "Lord of Vermilion: Guren no Ou",
+            "year": 2018,
+            "season": "summer",
+            "themes": [
+                {
+                    "themeType": "OP",
+                    "themeName": "Tenshi yo Kokyou wo Kike",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/LordOfVermilion-OP1.webm",
+                        "priority": 0,
+                        "notes": ""
+                    }
+                }
+            ]
+        },
+        {
+            "malID": 23133,
+            "name": "M3: Sono Kuroki Hagane",
+            "year": 2014,
+            "season": "spring",
+            "themes": [
+                {
+                    "themeType": "OP1",
+                    "themeName": "Re:REMEMBER",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/M3SonoKurokiHagane-OP1.webm",
+                        "priority": 3,
+                        "notes": ""
+                    }
+                }
+            ]
+        },
+        {
+            "malID": 3572,
+            "name": "Macross F",
+            "year": 2008,
+            "season": "spring",
+            "themes": [
+                {
+                    "themeType": "OP3",
+                    "themeName": "Lion",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/MacrossF-OP3.webm",
+                        "priority": 7,
+                        "notes": ""
+                    }
+                },
+                {
+                    "themeType": "ED10",
+                    "themeName": "Empty Diamond Crevasse",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/MacrossF-ED10.webm",
+                        "priority": 1,
+                        "notes": "NSFW, Spoiler"
+                    }
+                },
+                {
+                    "themeType": "ED2",
+                    "themeName": "Diamond Crevasse\" by May'",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/MacrossF-ED2.webm",
+                        "priority": 7,
+                        "notes": ""
+                    }
+                },
+                {
+                    "themeType": "ED7",
+                    "themeName": "Diamond Crevasse 50/50\" by Megumi Nakajima and May'",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/MacrossF-ED7.webm",
+                        "priority": 4,
+                        "notes": "Spoiler"
+                    }
+                },
+                {
+                    "themeType": "ED8",
+                    "themeName": "Northern Cross",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/MacrossF-ED8.webm",
+                        "priority": 7,
+                        "notes": ""
+                    }
+                }
+            ]
+        },
+        {
+            "malID": 35062,
+            "name": "Mahoutsukai no Yome",
+            "year": 2017,
+            "season": "fall",
+            "themes": [
+                {
+                    "themeType": "OP2 V1",
+                    "themeName": "You",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/MahoutsukaiNoYome-OP2-NCBD1080.webm",
+                        "priority": 7,
+                        "notes": ""
+                    }
+                },
+                {
+                    "themeType": "OP2 V2",
+                    "themeName": "You",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/MahoutsukaiNoYome-OP2v2-NCBD1080.webm",
+                        "priority": 7,
+                        "notes": ""
+                    }
+                }
+            ]
+        },
+        {
+            "malID": 37598,
+            "name": "Phantom in the Twilight",
+            "year": 2018,
+            "season": "summer",
+            "themes": [
+                {
+                    "themeType": "ED1",
+                    "themeName": "HOME",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/PhantomInTheTwilight-ED1.webm",
+                        "priority": 0,
+                        "notes": ""
+                    }
+                },
+                {
+                    "themeType": "ED2",
+                    "themeName": "Yousei no Koibito",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/PhantomInTheTwilight-ED2.webm",
+                        "priority": -3,
+                        "notes": ""
+                    }
+                }
+            ]
+        },
+        {
+            "malID": 9981,
+            "name": "Phi Brain: Kami no Puzzle",
+            "year": 2011,
+            "season": "fall",
+            "themes": [
+                {
+                    "themeType": "OP",
+                    "themeName": "Brain Diver",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/PhiBrain-OP1.webm",
+                        "priority": 3,
+                        "notes": ""
+                    }
+                }
+            ]
+        },
+        {
+            "malID": 5220,
+            "name": "Shangri-La",
+            "year": 2009,
+            "season": "spring",
+            "themes": [
+                {
+                    "themeType": "OP",
+                    "themeName": "Kimi Shinitamou Koto Nakare",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/ShangriLa-OP1-Lyrics.webm",
+                        "priority": 3,
+                        "notes": ""
+                    }
+                }
+            ]
+        },
+        {
+            "malID": 33433,
+            "name": "Shuumatsu no Izetta",
+            "year": 2016,
+            "season": "fall",
+            "themes": [
+                {
+                    "themeType": "ED",
+                    "themeName": "Hikari Aru Basho e",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/ShuumatsuNoIzetta-ED1.webm",
+                        "priority": 0,
+                        "notes": ""
+                    }
+                }
+            ]
+        },
+        {
+            "malID": 29758,
+            "name": "Taboo Tattoo",
+            "year": 2016,
+            "season": "summer",
+            "themes": [
+                {
+                    "themeType": "OP",
+                    "themeName": "Belief",
+                    "mirror": {
+                        "mirrorURL": "https://animethemes.moe/video/TabooTattoo-OP1-NCBD1080.webm",
+                        "priority": 7,
+                        "notes": ""
+                    }
+                }
+            ]
+        }
+    ]
+}

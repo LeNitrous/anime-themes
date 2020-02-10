@@ -1,6 +1,5 @@
-import Anime from "./anime";
+import Anime, { IAnimeThemeResponse } from "./anime";
 import AnimeThemes from ".";
-import { IAnimeThemeResponse, IThemeResponse } from "./responses";
 
 export default class Theme {
     public readonly title: string;
@@ -30,7 +29,19 @@ export default class Theme {
     }
 }
 
-export enum ThemeType {
-    OP = "OP",
-    ED = "ED",
+export type ThemeType = "OP" | "ED";
+
+export interface IThemeBaseResponse {
+    themeType: string;
+    themeName: string;
+}
+
+export interface IThemeMirrorResponse {
+    mirrorURL: string;
+    priority: number;
+    notes: string;
+}
+
+export interface IThemeResponse extends IThemeBaseResponse {
+    mirrors: IThemeMirrorResponse[];
 }

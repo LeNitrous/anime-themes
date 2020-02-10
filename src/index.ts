@@ -1,11 +1,9 @@
-import Anime from "./anime";
-import Theme from "./theme";
-import { IAnimeResponse, IAnimeThemeResponse } from "./responses";
+import Anime, { IAnimeResponse } from "./anime";
 import fetch, { RequestInit } from "node-fetch";
+import { SeasonInfo, ISeasonListItemResponse, SeasonType, Season } from "./season";
+import Artist, { IArtistListItemResponse } from "./artist";
 
 class AnimeThemes {
-    public static Anime: AnimeConstructor;
-    public static Theme: ThemeConstructor;
     public readonly host: string;
     private readonly options: RequestInit;
 
@@ -35,20 +33,48 @@ class AnimeThemes {
         return new Anime(response[0], this);
     }
 
+    public async getArtists(): Promise<Artist[]> {
+        const response = await this.query<IArtistListItemResponse[]>("/artists");
+        return response.map((item) => new Artist(item, this));
+    }
+
+    public async getSeasons(): Promise<SeasonInfo[]> {
+        const response = await this.query<ISeasonListItemResponse[]>("/seasons");
+        return response.map((item) => new SeasonInfo(item, this));
+    }
+
+    public async getSeason(year: number, season: SeasonType): Promise<Season> {
+        const response = await this.query<IAnimeResponse[]>(`/seasons/${year}/${season}`);
+        return new Season(new SeasonInfo({ year: year.toString(), season: season }, this), response);
+    }
+
+    public async getYears(): Promise<number[]> {
+        const response = await this.query<string[]>("/years");
+        return response.map((item) => parseInt(item));
+    }
+
+    public async getYear(year: number): Promise<Anime[]> {
+        const response = await this.query<IAnimeResponse[]>(`/seasons/${year}`);
+        return response.map((item) => new Anime(item, this));
+    }
+
+    public async getSongCount(): Promise<number> {
+        const response = await this.query<ISongCountResponse>("/songcount");
+        return response.count;
+    }
+
     public async query<T>(path: string, options?: RequestInit): Promise<T> {
         return await (await fetch(this.host + path, { ...this.options, ...options })).json();
     }
 }
-
-type AnimeConstructor = new (data: IAnimeResponse, api: AnimeThemes) => Anime;
-type ThemeConstructor = new (data: IAnimeThemeResponse, anime: Anime) => Theme;
 
 interface IAnimeThemesOptions {
     host: string;
     userAgent?: string;
 }
 
-AnimeThemes.Anime = Anime;
-AnimeThemes.Theme = Theme;
+interface ISongCountResponse {
+    count: number;
+}
 
 export = AnimeThemes;

@@ -1,28 +1,31 @@
 import AnimeThemes from ".";
-import { IAnimeResponse } from "./responses";
-import Theme from "./theme";
+import Theme, { IThemeBaseResponse, IThemeMirrorResponse } from "./theme";
+import { SeasonType, SeasonInfo, Season } from "./season";
 
 export default class Anime {
     public readonly id: number;
     public readonly title: string;
-    public readonly year: number;
-    public readonly season: Season;
-    public readonly api: AnimeThemes;
+    public readonly season: SeasonInfo;
     public readonly themes: Theme[];
+    public readonly api: AnimeThemes;
 
     constructor(data: IAnimeResponse, api: AnimeThemes) {
         this.id = data.malID;
-        this.year = data.year;
-        this.season = data.season as Season;
+        this.season = new SeasonInfo({ year: data.year.toString(), season: data.season }, api);
         this.title = data.name;
         this.api = api;
         this.themes = data.themes.map((t) => new Theme(t, this));
     }
 }
 
-export enum Season {
-    Winter = "Winter",
-    Spring = "Spring",
-    Summer = "Summer",
-    Fall = "Fall",
+export interface IAnimeResponse {
+    malID: number;
+    name: string;
+    year: number;
+    season: SeasonType;
+    themes: IAnimeThemeResponse[];
+}
+
+export interface IAnimeThemeResponse extends IThemeBaseResponse {
+    mirror: IThemeMirrorResponse;
 }

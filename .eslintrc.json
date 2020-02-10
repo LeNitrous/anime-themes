@@ -23,6 +23,9 @@
     "rules": {
         "@typescript-eslint/interface-name-prefix": ["warn", { "prefixWithI": "always" }],
         "indent": ["warn", 4],
-        "sort-imports": ["warn", { "memberSyntaxSortOrder": [ "none", "all", "single", "multiple" ] }]
+        "sort-imports": ["warn", { "memberSyntaxSortOrder": [ "none", "all", "single", "multiple" ] }],
+        "semi": "error",
+        "comma-dangle": ["warn", "last"],
+        "quotes": ["warn", "double"]
     }
 }
