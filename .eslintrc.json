@@ -25,7 +25,7 @@
         "indent": ["warn", 4],
         "sort-imports": ["warn", { "memberSyntaxSortOrder": [ "none", "all", "single", "multiple" ] }],
         "semi": "error",
-        "comma-dangle": ["warn", "last"],
+        "comma-dangle": ["warn", "never"],
         "quotes": ["warn", "double"]
     }
 }

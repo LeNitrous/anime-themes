@@ -1,5 +1,5 @@
-import Anime, { IAnimeThemeResponse } from "./anime";
 import AnimeThemes from ".";
+import Anime, { IAnimeThemeResponse } from "./anime";
 
 export default class Theme {
     public readonly title: string;
@@ -14,7 +14,7 @@ export default class Theme {
         this.title = data.themeName;
         this.url = data.mirror.mirrorURL;
 
-        const parts = data.themeType.match(/(OP|ED)(\d)?( V(\d))?/);
+        const parts = data.themeType.match(/(OP|ED)(\d+)?( V(\d+))?/);
         this.type = parts[1] as unknown as ThemeType;
         this.number = (parts[2]) ? parseInt(parts[2], 10) : 1;
         this.version = (parts[4]) ? parseInt(parts[4], 10) : 1;
