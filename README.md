@@ -1,5 +1,5 @@
 # anime-themes
-![GitHub](https://img.shields.io/github/license/lenitrous/anime-themes?color=blue&style=flat-square) ![npm](https://img.shields.io/npm/v/anime-themes?style=flat-square) ![GitHub Action (Tests)](https://github.com/lenitrous/anime-themes/workflows/Build/badge.svg) ![GitHub Action (Lint)](https://github.com/lenitrous/anime-themes/workflows/Build/badge.svg)
+![GitHub](https://img.shields.io/github/license/lenitrous/anime-themes?color=blue&style=flat-square) ![npm](https://img.shields.io/npm/v/anime-themes?style=flat-square) ![GitHub Action (Tests)](https://github.com/lenitrous/anime-themes/workflows/Tests/badge.svg) ![GitHub Action (Lint)](https://github.com/lenitrous/anime-themes/workflows/Lint/badge.svg)
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W71CF9V)
 
