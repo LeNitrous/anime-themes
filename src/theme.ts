@@ -1,5 +1,5 @@
-import Anime, { IAnimeThemeResponse } from "./anime";
 import AnimeThemes from ".";
+import Anime, { IAnimeThemeResponse } from "./anime";
 
 export default class Theme {
     public readonly title: string;

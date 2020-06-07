@@ -1,6 +1,6 @@
 import AnimeThemes from ".";
+import { SeasonInfo, SeasonType } from "./season";
 import Theme, { IThemeBaseResponse, IThemeMirrorResponse } from "./theme";
-import { SeasonType, SeasonInfo, Season } from "./season";
 
 export default class Anime {
     public readonly id: number;

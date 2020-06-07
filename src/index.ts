@@ -1,7 +1,7 @@
 import Anime, { IAnimeResponse } from "./anime";
-import fetch, { RequestInit } from "node-fetch";
-import { SeasonInfo, ISeasonListItemResponse, SeasonType, Season } from "./season";
 import Artist, { IArtistListItemResponse } from "./artist";
+import { ISeasonListItemResponse, Season, SeasonInfo, SeasonType } from "./season";
+import fetch, { RequestInit } from "node-fetch";
 
 class AnimeThemes {
     public readonly host: string;
@@ -15,8 +15,8 @@ class AnimeThemes {
                 "Accept-Encoding": "gzip,deflate,br",
                 "Content-Type": "application/json",
                 "Transfer-Encoding": "chunked",
-                "User-Agent":  options.userAgent || `anime-themes/${require("../package.json").version} (+https://github.com/LeNitrous/anime-themes)`,
-            },
+                "User-Agent":  options.userAgent || `anime-themes/${require("../package.json").version} (+https://github.com/LeNitrous/anime-themes)`
+            }
         };
     }
 
